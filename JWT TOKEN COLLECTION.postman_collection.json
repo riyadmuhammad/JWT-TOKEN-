@@ -1,0 +1,140 @@
+{
+	"id": "25a1c306-ef4a-49c7-1fff-fc4a4edca869",
+	"name": "JWT TOKEN COLLECTION",
+	"description": "",
+	"order": [
+		"cede42f3-fbaf-7231-b081-181ab3dcaf70",
+		"805968c8-d49b-1bfe-f756-913ec31637a0",
+		"c9cb00be-401f-6d9f-1711-dc799db91a54",
+		"6325c8ca-f60d-5e03-5971-689caeec170d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1664409511264,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "6325c8ca-f60d-5e03-5971-689caeec170d",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcmlmIiwiZXhwIjoxNjY0NDQ3MTIzLCJpYXQiOjE2NjQ0MjkxMjN9.BTf7_HonfGyN3i9j3sbDGCNsLcnM2AEfW1ES598YfjebLYGe4SVHdSdnDOMm8Nth_XV3zTOX1DB3oMp2juxNpA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcmlmIiwiZXhwIjoxNjY0NDQ3MTIzLCJpYXQiOjE2NjQ0MjkxMjN9.BTf7_HonfGyN3i9j3sbDGCNsLcnM2AEfW1ES598YfjebLYGe4SVHdSdnDOMm8Nth_XV3zTOX1DB3oMp2juxNpA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/user/list",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "25a1c306-ef4a-49c7-1fff-fc4a4edca869",
+			"data": null,
+			"dataMode": "params",
+			"name": "user-list",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1664429410487,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "805968c8-d49b-1bfe-f756-913ec31637a0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/authenticate",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "25a1c306-ef4a-49c7-1fff-fc4a4edca869",
+			"data": [],
+			"dataMode": "raw",
+			"name": "authenticate",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1664429374644,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"username\" : \"arif\",\n\t\"password\" : \"123\"\n}"
+		},
+		{
+			"id": "c9cb00be-401f-6d9f-1711-dc799db91a54",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcmlmIiwiZXhwIjoxNjY0NDQ3MTIzLCJpYXQiOjE2NjQ0MjkxMjN9.BTf7_HonfGyN3i9j3sbDGCNsLcnM2AEfW1ES598YfjebLYGe4SVHdSdnDOMm8Nth_XV3zTOX1DB3oMp2juxNpA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcmlmIiwiZXhwIjoxNjY0NDQ3MTIzLCJpYXQiOjE2NjQ0MjkxMjN9.BTf7_HonfGyN3i9j3sbDGCNsLcnM2AEfW1ES598YfjebLYGe4SVHdSdnDOMm8Nth_XV3zTOX1DB3oMp2juxNpA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/user/info",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "25a1c306-ef4a-49c7-1fff-fc4a4edca869",
+			"data": null,
+			"dataMode": "params",
+			"name": "user-info",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1664429389327,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "cede42f3-fbaf-7231-b081-181ab3dcaf70",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/register",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "25a1c306-ef4a-49c7-1fff-fc4a4edca869",
+			"data": [],
+			"dataMode": "raw",
+			"name": "register",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1664429358884,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"username\" : \"riad\",\n\t\"password\" : \"123\",\n\t\"userRoles\" : [\"ROLE_ADMIN\",\"ROLE_USER\"]\n}"
+		}
+	]
+}

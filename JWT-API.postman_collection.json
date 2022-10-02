@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "5aec083b-26a0-47cf-bfae-5b6593e18976",
+		"name": "JWT-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1767122"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"username\": \"riad\",\r\n\t\"password\" : \"123\",\r\n\t\"userRoles\": [\"ROLE_USER\",\"ROLE_ADMIN\"] \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"riad\",\r\n    \"password\" : \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaWFkIiwiZXhwIjoxNjY0NzA0NDQ5LCJpYXQiOjE2NjQ2ODY0NDl9.KBEOoXJCtjPQljRgrlqYsOTmnlFKOC1HD14F_My3fCAECBXJ6qgdMvqN-sseEgNuQiwh9u9XpdGjHtfuybY51w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyaWFkIiwiZXhwIjoxNjY0NzA0NDQ5LCJpYXQiOjE2NjQ2ODY0NDl9.KBEOoXJCtjPQljRgrlqYsOTmnlFKOC1HD14F_My3fCAECBXJ6qgdMvqN-sseEgNuQiwh9u9XpdGjHtfuybY51w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
